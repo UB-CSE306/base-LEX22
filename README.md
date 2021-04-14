@@ -1,4 +1,4 @@
-# LEX20
+# LEX22
 
 This lab exercise builds off the code in an earlier lab exercise. The bugs engineered into the code for that exercise have been removed.
 

@@ -4,7 +4,7 @@ This lab exercise builds off the code in an earlier lab exercise. The bugs engin
 
 In this exercise you will experiment with the code to restructure it in various ways to better understand the impact this has on the efficiency of the code and the quality of the performance informationreported by the tools.
 
-You will now run through steps, each containing several tasks.  Put answers to questions into the [LEX20 response form](https://docs.google.com/forms/d/e/1FAIpQLSeqRbIifFbk-mzOyiR6ey1KschvQ-penIKw3CCyjO-hnju5dg/viewform?usp=sf_link).
+You will now run through steps, each containing several tasks.  Put answers to questions into the [LEX22 response form](https://docs.google.com/forms/d/e/1FAIpQLSeRgeHM3rPsqYMW5nuUV4GoPAGXd0LYD7fZbcHhd8HMOhP3TA/viewform?usp=sf_link).
 
 ## Step 1
 Make a subdirectory named `step1`, and move the output files created along the way into this subdirectory.  Before proceeding to step 2 be sure to add/commit/push these files to the remote repo on GitHub.
@@ -87,4 +87,4 @@ Answer the three reflection questions, [Reflection 5a], [Reflection 5b], and [Re
 # Wrapping up
 Ensure that you have added, committed, and pushed your files to the remote repo on GitHub.
 
-Also give your feedback on the [LEX 20 Feedback Form](https://docs.google.com/forms/d/e/1FAIpQLSdQetaeVu1UopP3YsTk0dBFkU-Llb_fLLXSfE44eMluGw84Rw/viewform?usp=sf_link).
+Also give your feedback on the [LEX 22 Feedback Form](https://docs.google.com/forms/d/e/1FAIpQLScYPszsg-tygGhAqocCJWK7Z5ZEOY1gzdTFKC90VjnmcGK4gg/viewform?usp=sf_link).

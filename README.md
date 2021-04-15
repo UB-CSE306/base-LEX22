@@ -7,9 +7,12 @@ In this exercise you will experiment with the code to restructure it in various 
 You will now run through steps, each containing several tasks.  Put answers to questions into the [LEX22 response form](https://docs.google.com/forms/d/e/1FAIpQLSeRgeHM3rPsqYMW5nuUV4GoPAGXd0LYD7fZbcHhd8HMOhP3TA/viewform?usp=sf_link).
 
 ## Resources
-[gprof documentation]()
-[gcov documentation]()
-[callgrind documentation]()
+[gprof documentation](https://sourceware.org/binutils/docs/gprof/)
+
+[gcov documentation](https://gcc.gnu.org/onlinedocs/gcc/Gcov.html)
+
+[callgrind documentation](https://www.valgrind.org/docs/manual/cl-manual.html)
+
 [Stanford CS107 callgrind page](https://web.stanford.edu/class/archive/cs/cs107/cs107.1194/resources/callgrind)
 
 ## Step 1

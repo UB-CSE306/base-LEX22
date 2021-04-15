@@ -6,7 +6,11 @@ In this exercise you will experiment with the code to restructure it in various 
 
 You will now run through steps, each containing several tasks.  Put answers to questions into the [LEX22 response form](https://docs.google.com/forms/d/e/1FAIpQLSeRgeHM3rPsqYMW5nuUV4GoPAGXd0LYD7fZbcHhd8HMOhP3TA/viewform?usp=sf_link).
 
-
+## Resources
+[gprof documentation]()
+[gcov documentation]()
+[callgrind documentation]()
+[Stanford CS107 callgrind page](https://web.stanford.edu/class/archive/cs/cs107/cs107.1194/resources/callgrind)
 
 ## Step 1
 Make a subdirectory named `step1`, and move the output files created along the way into this subdirectory.  Before proceeding to step 2 be sure to add/commit/push these files to the remote repo on GitHub.
@@ -14,7 +18,7 @@ Make a subdirectory named `step1`, and move the output files created along the w
 ### gprof and gcov
 Run `make andRunPerformance`.  Copy the output files produced by gprof and gcov into lthe `step1` subdirectory, *before proceeding on to run callgrind*.  This is important, as `make andRunCallGrind` invokes `make clean` and will remove these output files.  If you accidentally remove them you will need to re-create them.
 
-Answer the questions [gprof 1] and [cgov 1] in the response form.
+Answer the questions [gprof 1] and [gcov 1] in the response form.
 
 ### callgrind
 Run `make andRunCallGrind`.  Run callgrind_annotate to produce output files as indicated in the the questions [callgrind 1a] and [callgrind 1b] in the response form.  Answer these questions, and then copy the output files produced by callgrind_annotate into lthe `step1` subdirectory.
@@ -133,7 +137,7 @@ Modify the ```shiftBuffer``` function so that rather always shifting by one, the
 Here's one way to change the ```shiftBuffer``` function:
 
 ```c
-void shiftBuffer1(char * buffer, int size) {
+void shiftBuffer(char * buffer, int size) {
   int shiftSize = 1;
   // determine how much we need to shift the buffer by
   for (; shiftSize < size; shiftSize++) {                                                                                                                             

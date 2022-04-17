@@ -36,7 +36,7 @@ Make a subdirectory named `step2`, and move the output files created along the w
 
 Now we are going to refactor the code so that the hotspots are isolated in separate functions. To refactor code is to change the design of the code in a way that preserves functionality.
 
-** As mentioned in the Wednesday demo, in past semesters students had to perform these code transformations on their own, and this took far more time than I intended, and distracted from the main point of this LEX: to run the tools and explore what they can tell us about program performance.  This semester we'll see how things go with the code transformations being provided to you.
+** In past semesters students had to perform these code transformations on their own, and this took far more time than I intended, and distracted from the main point of this LEX: to run the tools and explore what they can tell us about program performance.  This semester we'll see how things go with the code transformations being provided to you.
 
 To do this step, first open the counts.c file.  Find the code that is delimited by the two lines `// >>>> TASK STEP 11.1` and `// <<<< TASK STEP 11.1`. Refactor so that the code between these lines is put into its own function and replaced by the function call `shiftBuffer(buffer, size-1);`. The function shiftBuffer should be defined this way:
 ```c

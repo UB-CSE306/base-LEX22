@@ -4,12 +4,14 @@ OBJECTS = counts.o tests.o
 OS := $(shell uname -s)
 
 ifeq ($(OS), Darwin) 
-  CUNIT_PATH_PREFIX = /usr/local/Cellar/cunit/2.1-3/
-  CUNIT_DIRECTORY = cunit
+  INCLUDE_PATH := /opt/homebrew/Cellar/criterion/2.4.1_1/include
+  LIB_PATH := /opt/homebrew/Cellar/criterion/2.4.1_1/lib
+  CC = gcc-12
 endif
 ifeq ($(OS), Linux) 
-  CUNIT_PATH_PREFIX = /util/CUnit/
-  CUNIT_DIRECTORY = CUnit/
+  INCLUDE_PATH := /util/criterion/include
+  LIB_PATH := /util/criterion/lib/x86_64-linux-gnu
+  CC = gcc
 endif
 
 CC = gcc
@@ -23,8 +25,8 @@ GEX = counts-gprof
 VEX = counts-valgrind
 TEX = tests
 FLAGS = -pg -fprofile-arcs -ftest-coverage
-CFLAGS = -L $(CUNIT_PATH_PREFIX)lib -I $(CUNIT_PATH_PREFIX)include/$(CUNIT_DIRECTORY) 
-CLIB = -lcunit
+CFLAGS = -L $(LIB_PATH) -I $(INCLUDE_PATH)
+CLIB = -lcriterion
 
 .PHONY: clean
 clean: 

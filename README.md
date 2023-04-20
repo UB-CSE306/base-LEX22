@@ -4,7 +4,7 @@ This lab exercise builds off the code in an earlier lab exercise. The bugs engin
 
 In this exercise you will experiment with the code to restructure it in various ways to better understand the impact this has on the efficiency of the code and the quality of the performance informationreported by the tools.
 
-You will now run through steps, each containing several tasks.  Put answers to questions into the [LEX22 response form](https://docs.google.com/forms/d/e/1FAIpQLSeRgeHM3rPsqYMW5nuUV4GoPAGXd0LYD7fZbcHhd8HMOhP3TA/viewform?usp=sf_link).
+You will now run through steps, each containing several tasks.  Put answers to questions into the [LEX22 response form](https://forms.microsoft.com/Pages/ResponsePage.aspx?id=ikpGlu34sUCZ4l9rUKICULvi_w1JTR1FnU3_jSUEFttUNjdVRldHNTVZWFk4WDdCU1lFWTUyR1lHWC4u).
 
 ## Resources
 [gprof documentation](https://sourceware.org/binutils/docs/gprof/)
@@ -175,6 +175,4 @@ Answer [impact 4] in the response form.
 Answer the three reflection questions, [Reflection 5a], [Reflection 5b], and [Reflection 5c], in the response form.
 
 # Wrapping up
-Ensure that you have added, committed, and pushed your files to the remote repo on GitHub.
-
-Also give your feedback on the [LEX 22 Feedback Form](https://docs.google.com/forms/d/e/1FAIpQLScYPszsg-tygGhAqocCJWK7Z5ZEOY1gzdTFKC90VjnmcGK4gg/viewform?usp=sf_link).
+Ensure that you have added, committed, and pushed your files to the remote repo on GitHub.  Also, don't forget to submit the response form!

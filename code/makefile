@@ -61,18 +61,24 @@ andRunPerformance:
 andRunTests:
 	make clean
 	make c-test
+	@echo "******************************************************************************"
+	@echo "** Running tests. This may take a minute...                                 "
+	@echo "******************************************************************************"
 	./$(TEX)
 	gcov $(SRC) 
-	@echo "Look at $(SRC).gcov for gcov annotated source code with execution counts"
+	@echo "******************************************************************************"
+	@echo "** Done!                                                                    "
+	@echo "** Look at $(SRC).gcov for gcov annotated source code with execution counts "
+	@echo "******************************************************************************"
 
 .PHONY: andRunCallGrind
 andRunCallGrind:
 	make clean
 	make v-exec
 	@echo "******************************************************************************"
-	@echo "** Running program on large file using callgrind. This may take a minute... **"
+	@echo "** Running program on large file using callgrind. This may take a minute... "
 	@echo "******************************************************************************"
 	valgrind --tool=callgrind ./$(VEX) 1000 1000
 	@echo "******************************************************************************"
-	@echo "** Done! Use callgrind_annotate to interpret the data file                  **"
+	@echo "** Done! Use callgrind_annotate to interpret the data file                  "
 	@echo "******************************************************************************"

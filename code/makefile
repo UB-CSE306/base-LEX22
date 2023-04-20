@@ -51,24 +51,30 @@ v-exec: counts.o
 andRunPerformance:
 	make clean
 	make c-exec
+	@echo "******************************************************************************"
+	@echo "** Gathering performance data."
+	@echo "******************************************************************************"
 	./$(GEX)
 	gprof -b ./$(GEX) gmon.out > analyze.txt 
 	gcov $(SRC) 
-	@echo "Look at analyze.txt for gprof timing data"
-	@echo "Look at $(SRC).gcov for gcov annotated source code with execution counts"
+	@echo "******************************************************************************"
+	@echo "** Done!"
+	@echo "** Look at analyze.txt for gprof timing data"
+	@echo "** Look at $(SRC).gcov for gcov annotated source code with execution counts."
+	@echo "******************************************************************************"
 
 .PHONY: andRunTests
 andRunTests:
 	make clean
 	make c-test
 	@echo "******************************************************************************"
-	@echo "** Running tests. This may take a minute...                                 "
+	@echo "** Running tests. This may take a minute..."
 	@echo "******************************************************************************"
 	./$(TEX)
 	gcov $(SRC) 
 	@echo "******************************************************************************"
-	@echo "** Done!                                                                    "
-	@echo "** Look at $(SRC).gcov for gcov annotated source code with execution counts "
+	@echo "** Done!"
+	@echo "** Look at $(SRC).gcov for gcov annotated source code with execution."
 	@echo "******************************************************************************"
 
 .PHONY: andRunCallGrind
@@ -80,5 +86,6 @@ andRunCallGrind:
 	@echo "******************************************************************************"
 	valgrind --tool=callgrind ./$(VEX) 1000 1000
 	@echo "******************************************************************************"
-	@echo "** Done! Use callgrind_annotate to interpret the data file                  "
+	@echo "** Done!"
+	@echo "** Use callgrind_annotate to interpret the data file."
 	@echo "******************************************************************************"

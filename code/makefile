@@ -36,7 +36,7 @@ counts.o: counts.c
 	gcc -c -g -O0 -Wall -std=c11 $(SRC)
 
 tests.o: tests.c
-	gcc -c -g -O0 -Wall -std=c11 -I $(CUNIT_PATH_PREFIX)include/$(CUNIT_DIRECTORY) $(TST)
+	gcc -c -g -O0 -Wall -std=c11 -I $(INCLUDE_PATH) $(TST)
 
 c-exec: counts.o
 	gcc -g -O0 -Wall $(FLAGS) $(CFLAGS) -o $(GEX) $(SRC) main.c
